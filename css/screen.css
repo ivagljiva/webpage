@@ -51,7 +51,6 @@ table {
 
 /* Base styles */
 
-/* Use the golden ratio (its the ratio for DNA!) as a modular scale: http://www.modularscale.com/?1&em&1.618 */
 html{
   font-size: 1.125em; /* 18 px / 16 px = 1.125 */
   /*120% of 18 = 21.6, round up to 22 */
@@ -61,6 +60,21 @@ html{
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
+}
+
+body {
+  padding-left: 1.833em; /*33 px / 18 px = 1.833 */
+  padding-right: 1.833em; /* = 1.5 line heights for readability on small screens*/
+  padding-top: 2.444em; /*44 px / 18 px = 2.444 = 2 line heights */
+}
+p{
+  padding-bottom: 1.222em; /* 1 line height */
+}
+
+h1,h2{
+  /* Use the golden ratio (its the ratio for DNA!) as a modular scale: http://www.modularscale.com/?1&em&1.618 */
+  font-size: 1.618em; /* 29.124 px / 18 px = 1.618 */
+  padding-bottom: 0.3777em; /* 11 px / 29.124 px = 0.3777 (0.5 line heights) */
 }
 
 /* Layout styles */
