@@ -85,3 +85,27 @@ h1,h2{
 .projectbox > h3 {
   padding-bottom: 0.305em /* 5.5 px / 18 px = 0.305 (.25 line height) */
 }
+
+/* Responsive style */
+
+/* 2-column grid for viewports larger than 800px */
+/* projectbox modules need to be evenly spaced */
+
+/* 800 px - 66 px  margins = 734 px padding-corrected content width */
+/* 734 px - 33 px gutter = 701 px for two columns */
+/* 701 / 2 = 350.5 px width per column*/
+/* offset for second column: 350.5px + 33 px = 383.5 px */
+@media screen and (min-width: 800px) {
+  .projectbox {
+    width: 47.752%; /* 350.5 px /734 px = 47.752% */
+    float: left;
+  }
+  /*TODO: fix issue where longer projectbox p elements force left floating elements right */
+  .projectbox:nth-of-type(2n){
+    float: none;
+    margin-left: 52.248%; /*383.5 px / 734 px = 52.2479564% */
+  }
+  .project-type {
+    float: left;
+  }
+}
