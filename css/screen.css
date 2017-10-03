@@ -74,9 +74,14 @@ p{
 h1,h2{
   /* Use the golden ratio (its the ratio for DNA!) as a modular scale: http://www.modularscale.com/?1&em&1.618 */
   font-size: 1.618em; /* 29.124 px / 18 px = 1.618 */
-  padding-bottom: 0.3777em; /* 11 px / 29.124 px = 0.3777 (0.5 line heights) */
+  padding-bottom: 0.755em; /* 22 px / 29.124 px = 0.755 (1 line heights) */
 }
 
 /* Layout styles */
 
 /* Modular styles */
+
+/* Every project box has a heading and a paragraph description */
+.projectbox > h3 {
+  padding-bottom: 0.305em /* 5.5 px / 18 px = 0.305 (.25 line height) */
+}
