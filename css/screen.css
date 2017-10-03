@@ -48,7 +48,20 @@ table {
 }
 /* End Reset CSS */
 /* Begin Site Styles */
+
 /* Base styles */
+
+/* Use the golden ratio (its the ratio for DNA!) as a modular scale: http://www.modularscale.com/?1&em&1.618 */
+html{
+  font-size: 1.125em; /* 18 px / 16 px = 1.125 */
+  /*120% of 18 = 21.6, round up to 22 */
+  line-height: 1.222em; /*22 px / 18 px = 1.222 */
+  text-renderinig: optimizeLegibility;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
 
 /* Layout styles */
 
