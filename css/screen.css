@@ -83,7 +83,10 @@ h1,h2{
 h1, h3 {
   font-weight: bold;
 }
-
+article{
+  /* Add a little extra padding for nicer spatial relationships */
+  padding-bottom: 0.611em /* 11 px / 18 px = 0.611 (.5 line height) */ 
+}
 /* Layout styles */
 
 /* Modular styles */
@@ -93,7 +96,7 @@ h1, h3 {
   padding-bottom: 0.305em /* 5.5 px / 18 px = 0.305 (.25 line height) */
 }
 
-/* Responsive style */
+/* State styles */
 
 /* 2-column grid for viewports larger than 800px */
 /* projectbox modules need to be evenly spaced */
