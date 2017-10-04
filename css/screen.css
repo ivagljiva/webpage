@@ -85,7 +85,7 @@ h1, h3 {
 }
 article{
   /* Add a little extra padding for nicer spatial relationships */
-  padding-bottom: 0.611em /* 11 px / 18 px = 0.611 (.5 line height) */ 
+  padding-bottom: 0.611em /* 11 px / 18 px = 0.611 (.5 line height) */
 }
 /* Layout styles */
 
@@ -98,22 +98,33 @@ article{
 
 /* State styles */
 
+/*TODO:Increase padding for larger screens*/
+@media screen and (min-width: 500px) {
+  body {
+    padding-left: 8.8%; /* 44 px / 500 px = 0.088 */
+    padding-right: 8.8%;
+  }
+}
 /* 2-column grid for viewports larger than 800px */
 /* projectbox modules need to be evenly spaced */
 
-/* 800 px - 66 px  margins = 734 px padding-corrected content width */
-/* 734 px - 33 px gutter = 701 px for two columns */
-/* 701 / 2 = 350.5 px width per column*/
-/* offset for second column: 350.5px + 33 px = 383.5 px */
+/* 800 px - 88 px  margins = 712 px padding-corrected content width */
+/* 712 px - 33 px gutter = 679 px for two columns */
+/* 679 / 2 = 339.5 px width per column*/
+/* offset for second column: 339.5px + 33 px = 372.5 px */
 @media screen and (min-width: 800px) {
+  body {
+    padding-left: 5.5%; /* 44 px / 800 px = 0.055 */
+    padding-right: 5.5%;
+  }
   .projectbox {
-    width: 47.752%; /* 350.5 px /734 px = 47.752% */
+    width: 47.682%; /* 339.5 px / 712 px = 47.682% */
     float: left;
   }
   /*TODO: fix issue where longer projectbox p elements force left floating elements right */
   .projectbox:nth-of-type(2n){
     float: none;
-    margin-left: 52.248%; /*383.5 px / 734 px = 52.2479564% */
+    margin-left: 52.317%; /*372.5 px / 712 px = 52.3174% */
   }
   .project-type {
     float: left;
