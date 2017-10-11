@@ -87,6 +87,9 @@ article{
   /* Add a little extra padding for nicer spatial relationships */
   padding-bottom: 0.611em /* 11 px / 18 px = 0.611 (.5 line height) */
 }
+i, em, cite{
+  font-style: italic;
+}
 /* Layout styles */
 
 /* Modular styles */
