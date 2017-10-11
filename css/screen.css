@@ -94,17 +94,6 @@ i, em, cite{
   font-style: italic;
 }
 /* Layout styles */
-/* This is what was demoed in class; TODO: adjust to make it work for you */
-/*#navigation {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-#navigation li {
-  width: 33.333333%;
-  float: left;
-}*/
 
 /* Modular styles */
 /*nav ul {
@@ -118,18 +107,6 @@ nav a {
   display: block;
   min-width: 15vw;
 }*/
-
-/* This is what was demo-ed in class; TODO: adjust to make it work for you */
-./*flexbox #navigtion {
-  position: static;
-}
-.flexbox #navigation ul {
-  display: flex;
-}
-.flexbox #navigation li {
-  float: none;
-}
-*/
 
 /* Every project box has a heading and a paragraph description */
 .projectbox > h3 {
