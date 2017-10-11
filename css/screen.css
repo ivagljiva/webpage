@@ -74,6 +74,9 @@ body {
 p, ul{
   padding-bottom: 1.222em; /* 1 line height */
 }
+ul {
+  list-style-type: none;
+}
 
 h1,h2{
   /* Use the golden ratio (its the ratio for DNA!) as a modular scale: http://www.modularscale.com/?1&em&1.618 */
@@ -93,6 +96,17 @@ i, em, cite{
 /* Layout styles */
 
 /* Modular styles */
+/*nav ul {
+  border-bottom: 1px solid black;
+}
+nav ul:last-child {
+  border: none;
+}
+nav a {
+  text-decoration: none;
+  display: block;
+  min-width: 15vw;
+}*/
 
 /* Every project box has a heading and a paragraph description */
 .projectbox > h3 {
