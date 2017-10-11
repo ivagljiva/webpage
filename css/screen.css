@@ -118,7 +118,12 @@ nav a {
   display: block;
   min-width: 15vw;
 }*/
-
+/* TODO: TEST THIS
+flexbox #header {
+  display: flex;
+  flex-direction: row; /* should allow text next to image in header
+}
+*/
 /* This is what was demo-ed in class; TODO: adjust to make it work for you */
 ./*flexbox #navigtion {
   position: static;
