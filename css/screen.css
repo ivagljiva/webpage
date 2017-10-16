@@ -122,26 +122,27 @@ nav a {
     padding-right: 8.8%;
   }
 }
-/* 2-column grid for viewports larger than 800px */
+/* 2-column grid for viewports larger than 830px */
 /* projectbox modules need to be evenly spaced */
 
-/* 800 px - 88 px  margins = 712 px padding-corrected content width */
-/* 712 px - 33 px gutter = 679 px for two columns */
-/* 679 / 2 = 339.5 px width per column*/
-/* offset for second column: 339.5px + 33 px = 372.5 px */
-@media screen and (min-width: 800px) {
+/* 830 px - 88 px  margins = 742 px padding-corrected content width */
+/* 742 px - 33 px gutter = 709 px for two columns */
+/* 709 / 2 = 354.5 px width per column*/
+/* offset for second column: 354.5px + 33 px = 387.5 px */
+@media screen and (min-width: 830px) {
   body {
-    padding-left: 5.5%; /* 44 px / 800 px = 0.055 */
-    padding-right: 5.5%;
+    padding-left: 5.3%; /* 44 px / 830 px = 0.053 */
+    padding-right: 5.3%;
   }
   .projectbox {
-    width: 47.682%; /* 339.5 px / 712 px = 47.682% */
+    width: 47.776%; /* 354.5 px / 742 px = 0.47776 */
     float: left;
   }
-  /*TODO: fix issue where longer projectbox p elements force left floating elements right */
+  /*TODO: fix issue where longer projectbox p elements force left floating elements to the right */
+  /*Create the second column of projectbox elements */
   .projectbox:nth-of-type(2n){
     float: none;
-    margin-left: 52.317%; /*372.5 px / 712 px = 52.3174% */
+    margin-left: 52.2237%; /*387.5 px / 742 px = 0.522237 */
   }
   .project-type {
     float: left;
