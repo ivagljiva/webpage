@@ -110,7 +110,7 @@ nav a {
 
 /* Every project box has a heading and a paragraph description */
 .projectbox > h3 {
-  padding-bottom: 0.305em /* 5.5 px / 18 px = 0.305 (.25 line height) */
+  padding-bottom: 0.611em /* 11 px / 18 px = 0.611 (.5 line height) */
 }
 
 /* State styles */
