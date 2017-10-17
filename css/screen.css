@@ -210,17 +210,8 @@ nav a {
     float: none;
     margin-left: 68.9704%; /*808.333333 px / 1172 px = 0.689704 */
   }
-  .project-type {
-    float: left;
-  }
   /*Flexbox styles for capable browsers */
-  .flexbox .project-type {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
   .flexbox .projectbox {
-    float: none;
-    margin: 0;
+    margin: 0; /* reset above float styles */
   }
 }
