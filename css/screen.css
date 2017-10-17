@@ -162,14 +162,14 @@ nav a {
   }
 }
 /* Freeze the 2-column design on larger screens, since 3-column is having float issues */
-@media screen and (min-width: 1280px) {
+/*@media screen and (min-width: 1280px) {
   #page {
     max-width: 1280px;
     margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
   }
-}
+}*/
 /* 3-column grid for viewports larger than 1280px */
 
 /* Font size: 22 px
@@ -183,36 +183,36 @@ nav a {
    offset for second column: 363.66667 + 40.5 = 404.166667 px
    offset for third column: 363.66667 + 40.5 + 363.66667 + 40.5 = 808.333333 px
 */
-/*
+
 @media screen and (min-width: 1280px){
   html{
     font-size: 1.222em; /* 22 px / 18 px = 1.222  */
-  /*  line-height: 1.227em; /* 27 / 22 px = 1.22727*/
-/*  }
+    line-height: 1.227em; /* 27 / 22 px = 1.22727*/
+  }
   body {
     padding-left: 4.2%; /* 54 px / 1280 px = 0.0421875 */
-  /*  padding-right: 4.2%;
+    padding-right: 4.2%;
   }
   .projectbox {
     width: 31.029%; /* 363.66667 px / 1172 px = 0.3102957 */
-/*    border-width: 1px;
+    border-width: 1px;
     border-style: solid;
   }
   .projectbox:nth-of-type(2n){
     margin-left: 0; /*reset previous media query*/
-/*  }
+  }
   /*Create the second column of projectbox elements */
-/*  .projectbox:nth-of-type(3n+2){ /*2,5,8*/
-/*    float: none;
+  .projectbox:nth-of-type(3n+2){ /*2,5,8*/
+    float: none;
     margin-left: 34.4852%; /*404.166667 px / 1172 px = 0.344852 */
-/*  }
+  }
   /*Create the third column of projectbox elements */
   /*TODO: fix floatdown of this column */
-/*  .projectbox:nth-of-type(3n){ /*3,6,9,...*/
-/*    float: none;
+  .projectbox:nth-of-type(3n){ /*3,6,9,...*/
+    float: none;
     margin-left: 68.9704%; /*808.333333 px / 1172 px = 0.689704 */
-/*  }
+  }
   .project-type {
     float: left;
   }
-} */
+}
