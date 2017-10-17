@@ -150,6 +150,16 @@ nav a {
   .project-type {
     float: left;
   }
+  /*Flexbox styles for capable browsers */
+  .flexbox .project-type {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .flexbox .projectbox {
+    float: none;
+    margin: 0;
+  }
 }
 /* Freeze the 2-column design on larger screens, since 3-column is having float issues */
 @media screen and (min-width: 1280px) {
