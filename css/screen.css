@@ -64,6 +64,7 @@ html{
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  background-color: #f4edd9;
 }
 
 body {
@@ -82,6 +83,7 @@ h1,h2{
   /* Use the golden ratio (its the ratio for DNA!) as a modular scale: http://www.modularscale.com/?1&em&1.618 */
   font-size: 1.618em; /* 29.124 px / 18 px = 1.618 */
   padding-bottom: 0.755em; /* 22 px / 29.124 px = 0.755 (1 line heights) */
+  color: #298479; //dark green-grey
 }
 h1, h3 {
   font-weight: bold;
