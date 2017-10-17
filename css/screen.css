@@ -230,4 +230,9 @@ nav a {
   .flexbox #teaching>.projectbox:nth-of-type(2n) {
       margin-left: 3.5%; /*to make it align with 2nd column above/below*/
   }
+  /*CSS grid styles for capable browsers */
+  .cssgrid .project-type {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 3.4556%; /*40.5px / 1172px = 0.034556 */
+  }
 }
