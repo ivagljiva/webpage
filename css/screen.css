@@ -95,6 +95,16 @@ article{
 i, em, cite{
   font-style: italic;
 }
+img {
+  display: block;
+  max-width: 100%;
+}
+/* Hide the figure captions so that screen readers will still read them*/
+figcaption {
+  position: absolute;
+  top: -9999999px;
+  left: -9999999px;
+}
 /* Layout styles */
 
 /* Modular styles */
