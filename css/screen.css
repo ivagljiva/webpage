@@ -195,8 +195,6 @@ nav a {
   }
   .projectbox {
     width: 31.029%; /* 363.66667 px / 1172 px = 0.3102957 */
-    border-width: 1px;
-    border-style: solid;
   }
   .projectbox:nth-of-type(2n){
     margin-left: 0; /*reset previous media query*/
