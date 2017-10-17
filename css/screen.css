@@ -182,6 +182,17 @@ nav a {
     width:auto;
   }
 }
+/*flex style for header on larger screens */
+@media screen and (min-width: 900px){
+  .flexbox h1 { /* Increase heading size if we are moving the image */
+    font-size: 2.618em; /*47.124 px / 18 px = 2.618 */
+    margin-top: 150px; /*halfway down image, which is 300px height*/
+  }
+  .flexbox header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 /* Freeze the 2-column design on larger screens, since 3-column is having float issues */
 /*@media screen and (min-width: 1280px) {
   #page {
