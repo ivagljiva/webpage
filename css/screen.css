@@ -160,6 +160,15 @@ nav a {
     float: none;
     margin: 0;
   }
+  /*CSS grid styles for capable browsers */
+  .cssgrid .project-type {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 4.447%; /*33px / 742px = 0.04447*/
+  }
+  .cssgrid .projectbox {
+    width:auto;
+  }
 }
 /* Freeze the 2-column design on larger screens, since 3-column is having float issues */
 /*@media screen and (min-width: 1280px) {
