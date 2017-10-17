@@ -214,4 +214,11 @@ nav a {
   .flexbox .projectbox {
     margin: 0; /* reset above float styles */
   }
+  /* Hack to prevent spreading of content due to fewer boxes*/
+  .flexbox #teaching {
+    justify-content: flex-start;
+  }
+  .flexbox #teaching>.projectbox:nth-of-type(2n) {
+      margin-left: 3.5%; /*to make it align with 2nd column above/below*/
+  }
 }
