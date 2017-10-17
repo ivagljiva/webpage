@@ -114,21 +114,25 @@ nav a {
 }
 
 /* State styles */
-
-/*TODO:Increase padding for larger screens*/
 @media screen and (min-width: 500px) {
   body {
     padding-left: 8.8%; /* 44 px / 500 px = 0.088 */
     padding-right: 8.8%;
   }
 }
+
 /* 2-column grid for viewports larger than 830px */
 /* projectbox modules need to be evenly spaced */
-
-/* 830 px - 88 px  margins = 742 px padding-corrected content width */
-/* 742 px - 33 px gutter = 709 px for two columns */
-/* 709 / 2 = 354.5 px width per column*/
-/* offset for second column: 354.5px + 33 px = 387.5 px */
+/* Font size: 18 px
+   Line-height: 22 px
+   Screen size: 830px
+   Margins: 2*22px = 44px each
+   Gutters: 1.5*22 = 33px each
+   Content-width: 830 - 44*2 = 742px
+   742 - 33 gutter = 709px for two equal-sized columns
+   709 / 2 = 354.5 px width per column
+   offset for second column: 354.5px + 33 px = 387.5 px
+*/
 @media screen and (min-width: 830px) {
   body {
     padding-left: 5.3%; /* 44 px / 830 px = 0.053 */
@@ -138,11 +142,52 @@ nav a {
     width: 47.776%; /* 354.5 px / 742 px = 0.47776 */
     float: left;
   }
-  /*TODO: fix issue where longer projectbox p elements force left floating elements to the right */
   /*Create the second column of projectbox elements */
   .projectbox:nth-of-type(2n){
     float: none;
     margin-left: 52.2237%; /*387.5 px / 742 px = 0.522237 */
+  }
+  .project-type {
+    float: left;
+  }
+}
+/* 3-column grid for viewports larger than 1280px */
+
+/* Font size: 22 px
+   Line-height: 27 px
+   Screen size: 1280px
+   Margins: 2*27px = 54px each
+   Gutters: 1.5*27 = 40.5px each
+   Content-width: 1280 - 54*2 = 1172px
+   1172 - 40.5*2 gutters = 1091px for three equal-sized columns
+   1091/3 = 363.666667 px width per column
+   offset for second column: 363.66667 + 40.5 = 404.166667 px
+   offset for third column: 363.66667 + 40.5 + 363.66667 + 40.5 = 808.333333 px
+*/
+@media screen and (min-width: 1280px){
+  html{
+    font-size: 1.222em; /* 22 px / 18 px = 1.222  */
+    line-height: 1.227em; /* 27 / 22 px = 1.22727*/
+  }
+  body {
+    padding-left: 4.2%; /* 54 px / 1280 px = 0.0421875 */
+    padding-right: 4.2%;
+  }
+  .projectbox {
+    width: 31.029%; /* 363.66667 px / 1172 px = 0.3102957 */
+  }
+  .projectbox:nth-of-type(2n){
+    margin-left: 0; /*reset previous media query*/
+  }
+  /*Create the second column of projectbox elements */
+  .projectbox:nth-of-type(3n+2){ /*2,5,8*/
+    float: none;
+    margin-left: 34.4852%; /*404.166667 px / 1172 px = 0.344852 */
+  }
+  /*Create the third column of projectbox elements */
+  .projectbox:nth-of-type(3n){ /*3,6,9,...*/
+    float: none;
+    margin-left: 68.9704%; /*808.333333 px / 1172 px = 0.689704 */
   }
   .project-type {
     float: left;
