@@ -64,7 +64,7 @@ html{
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  background-color: #f4edd9;
+  background-color: #f4edd9; //tan
 }
 
 body {
@@ -106,19 +106,39 @@ figcaption {
   left: -9999999px;
 }
 /* Layout styles */
-
+/* put horizontal navigation below header */
+#navigation {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+}
+#navigation li {
+  width: 20%;
+  float:left;
+}
+#header {
+  margin-top: 100px;
+}
+.flexbox #navigation ul {
+  display: flex;
+}
+.flexbox #navigation li {
+  float: none;
+}
 /* Modular styles */
-/*nav ul {
-  border-bottom: 1px solid black;
-}
-nav ul:last-child {
-  border: none;
-}
-nav a {
+nav li {
   text-decoration: none;
   display: block;
-  min-width: 15vw;
-}*/
+  padding-top: 0.611em; /* 11 px / 18 px = 0.611 (.5 line height) */
+  padding-bottom: 0.611em;
+  background-color: #298479; //dark green-grey
+  text-align: center;
+}
+nav a {
+  padding-top: 0.611em; /* 11 px / 18 px = 0.611 (.5 line height) */
+  padding-bottom: 0.611em;
+}
 
 /* Every project box has a heading and a paragraph description */
 .projectbox > h3 {
