@@ -123,18 +123,21 @@ figcaption {
 .flexbox #navigation li {
   float: none;
 }
+header {
+  padding-top: 1.222em; /*22 px / 18 px = 1.222 */
+  padding-bottom: 1.222em; /*22 px / 18 px = 1.222 */
+}
 /* Modular styles */
 nav li {
   display: block;
   padding-top: 0.611em; /* 11 px / 18 px = 0.611 (.5 line height) */
   padding-bottom: 0.611em;
   background-color: #298479; //dark green-grey
-  text-align: center;
 }
 nav a {
-    text-decoration: none;
-    color: #f4edd9; //tan
-
+  text-decoration: none;
+  text-align: center;
+  color: #f4edd9; //tan
 }
 /* Every project box has a heading and a paragraph description */
 .projectbox > h3 {
