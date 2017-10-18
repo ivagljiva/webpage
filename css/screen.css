@@ -128,6 +128,9 @@ header {
   padding-bottom: 1.222em; /*22 px / 18 px = 1.222 */
 }
 /* Modular styles */
+nav ul {
+  text-align: center;
+}
 nav li {
   display: block;
   padding-top: 0.611em; /* 11 px / 18 px = 0.611 (.5 line height) */
@@ -136,7 +139,6 @@ nav li {
 }
 nav a {
   text-decoration: none;
-  text-align: center;
   color: #f4edd9; //tan
 }
 /* Every project box has a heading and a paragraph description */
