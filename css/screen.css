@@ -108,13 +108,13 @@ figcaption {
 
 /* Layout styles */
 /* put horizontal navigation above header */
-#navigation {
-  position: absolute;
-  top:0;
-}
 #navigation, #contact {
+  position: absolute;
   left: 0;
   width: 100%;
+}
+#navigation {
+  top:0;
 }
 #navigation li, #contact li {
   width: 25%;
