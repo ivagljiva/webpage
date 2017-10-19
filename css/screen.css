@@ -105,15 +105,18 @@ figcaption {
   top: -9999999px;
   left: -9999999px;
 }
+
 /* Layout styles */
 /* put horizontal navigation above header */
 #navigation {
   position: absolute;
   top:0;
+}
+#navigation, #contact {
   left: 0;
   width: 100%;
 }
-#navigation li {
+#navigation li, #contact li {
   width: 25%;
   float:left;
 }
