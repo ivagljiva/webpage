@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang='en'>
-<div id='page'> <!-- for media query to fix page width -->
 <head>
   <title>Iva Veseli</title>
   <meta charset='utf-8' />
@@ -10,9 +9,10 @@
   <script src="js/modernizr.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Iva Veseli</h1>
-    <figure id="header-photo"
+  <div id='page'> <!-- for media query to fix page width -->
+    <header>
+      <h1>Iva Veseli</h1>
+      <figure id="header-photo"
       aria-labelledby="caption-header"
       aria-describedby="about">
       <img src="img/webpage-header_400x250.png" alt="Venn diagram of biology and computer science" />
@@ -20,140 +20,139 @@
     </figure>
   </header>
   <main>
-  <article>
-    <!--TODO: add image of me in the lab -->
-    <h2 id='about'>About Me</h2>
-    <p>
-      I am a B.S. Biology/M.S. Computer Science co-terminal degree student at
-      Illinois Institute of Technology in Chicago, IL, currently in my fourth and
-      final year. Since 2015, I've been a research assistant in the Pombert Lab as
-      well as a teaching assistant in the Computer Science Department. I am
-      interested in research questions in computational biology and
-      bioinformatics, specifically in the field of genomics. Though my research
-      and interests are interdisciplinary and I spend most of my time on a
-      computer, at heart I consider myself a biologist - I enjoy programming and
-      often write computer programs that will facilitate my research, but
-      ultimately it is the biologically-relevant results of my projects that pique
-      my curiosity and motivate my studies.
-    </p>
-  </article>
+    <article>
+      <!--TODO: add image of me in the lab -->
+      <h2 id='about'>About Me</h2>
+      <p>
+        I am a B.S. Biology/M.S. Computer Science co-terminal degree student at
+        Illinois Institute of Technology in Chicago, IL, currently in my fourth and
+        final year. Since 2015, I've been a research assistant in the Pombert Lab as
+        well as a teaching assistant in the Computer Science Department. I am
+        interested in research questions in computational biology and
+        bioinformatics, specifically in the field of genomics. Though my research
+        and interests are interdisciplinary and I spend most of my time on a
+        computer, at heart I consider myself a biologist - I enjoy programming and
+        often write computer programs that will facilitate my research, but
+        ultimately it is the biologically-relevant results of my projects that pique
+        my curiosity and motivate my studies.
+      </p>
+    </article>
 
-  <h2>Research</h2>
-  <article class='project-type' id='research'>
-    <!--Current projects -->
-    <section class='projectbox'>
-      <h3>Comparative Genomics of <i>Neisseria</i> Species</h3>
-      <p>
-        I have sequenced six <i>Neisseria</i> species and am studying how they compare to
-        the rest of the genus. I am also investigating the Oxford Nanopore sequencing
-        technology, and how it can be used in tandem with Illumina sequencing.
-      </p>
-    </section>
-    <!--Past projects-->
-    <section class='projectbox'>
-      <h3>SNP Analysis Pipeline</h3>
-      <p>
-        The Pombert Lab has developed a pipeline that integrates common software for
-        read mapping, SNP calling, clustering, and visualization. I worked on a script
-        that generates synthetic sequence reads from genome assemblies.
-      </p>
-    </section>
-    <section class='projectbox'>
-      <h3>Comparative Genomics of <i>Vitreoscilla</i> sp. C1</h3>
-      <p>
-        The first bacterial hemoglobin was isolated from <i>Vitreoscilla</i> sp. strain C1.
-        I sequenced the genome of this species and compared it to its relatives in the
-        Neisseriaceae family, including <i>Vitreoscilla stercoraria</i>.
-      </p>
-    </section>
-  </article>
+    <h2>Research</h2>
+    <article class='project-type' id='research'>
+      <!--Current projects -->
+      <section class='projectbox'>
+        <h3>Comparative Genomics of <i>Neisseria</i> Species</h3>
+        <p>
+          I have sequenced six <i>Neisseria</i> species and am studying how they compare to
+          the rest of the genus. I am also investigating the Oxford Nanopore sequencing
+          technology, and how it can be used in tandem with Illumina sequencing.
+        </p>
+      </section>
+      <!--Past projects-->
+      <section class='projectbox'>
+        <h3>SNP Analysis Pipeline</h3>
+        <p>
+          The Pombert Lab has developed a pipeline that integrates common software for
+          read mapping, SNP calling, clustering, and visualization. I worked on a script
+          that generates synthetic sequence reads from genome assemblies.
+        </p>
+      </section>
+      <section class='projectbox'>
+        <h3>Comparative Genomics of <i>Vitreoscilla</i> sp. C1</h3>
+        <p>
+          The first bacterial hemoglobin was isolated from <i>Vitreoscilla</i> sp. strain C1.
+          I sequenced the genome of this species and compared it to its relatives in the
+          Neisseriaceae family, including <i>Vitreoscilla stercoraria</i>.
+        </p>
+      </section>
+    </article>
 
-  <h2>Teaching</h2>
-  <article class='project-type' id='teaching'>
-    <!--Current courses -->
-    <section class='projectbox'>
-      <h3>CS105: Introduction to Computer Programming</h3>
-      <p>
-        A C++ class for students not in computer science disciplines. This is my
-        second semester teaching the lab section of the course.
-      </p>
-    </section>
-    <!--Previous courses -->
-    <section class='projectbox'>
-      <h3>CS115: Introduction to Object-oriented Programming</h3>
-      <p>
-        A Java class for computer science students. I have taught the lab section
-        for this course for four semesters so far.
-      </p>
-    </section>
-  </article>
+    <h2>Teaching</h2>
+    <article class='project-type' id='teaching'>
+      <!--Current courses -->
+      <section class='projectbox'>
+        <h3>CS105: Introduction to Computer Programming</h3>
+        <p>
+          A C++ class for students not in computer science disciplines. This is my
+          second semester teaching the lab section of the course.
+        </p>
+      </section>
+      <!--Previous courses -->
+      <section class='projectbox'>
+        <h3>CS115: Introduction to Object-oriented Programming</h3>
+        <p>
+          A Java class for computer science students. I have taught the lab section
+          for this course for four semesters so far.
+        </p>
+      </section>
+    </article>
 
-  <h2>Course Projects</h2>
-  <article class='project-type' id='courseprojects'>
-    <!--Current projects -->
-    <section class='projectbox'>
-      <h3>Student Cluster Competition 2017</h3>
-      <p>
-        I am part of a team of students who will be competing in the Student
-        Cluster Competition this November. We are profiling and optimizing
-        scientific applications so that they will run efficiently and with
-        maximum performance on our custom-built cluster during the contest.
-      </p>
-    </section>
-    <!--Past projects-->
-    <section class='projectbox'>
-      <h3>GUI design for AIGDock</h3>
-      <p>
-        In Summer 2016, I took part in a web development team project. We designed a graphical user
-        interface for AIGDock, a protein-ligand docking software developed by Dr. David Minh's lab.
-        Our aim was to increase the accessibility of this software for researchers without
-        computational backgrounds.
-      </p>
-    </section>
-    <section class='projectbox'>
-      <h3>Classification of Horizontal Gene Transfer</h3>
-      <p>
-        For a Machine Learning course in Fall 2016, I developed classification
-        models to predict instances of horizontal gene transfer in bacterial
-        genomes.
-      </p>
-    </section>
-    <section class='projectbox'>
-      <h3>Automated Essay Grading</h3>
-      <p>
-        For a Data Mining course in Spring 2017, my team explored feature
-        engineering for accurate score classification of essays and short answer
-        responses, which could be used by primary school teachers to provide faster
-        feedback to their students.
-      </p>
-    </section>
-  </article>
+    <h2>Course Projects</h2>
+    <article class='project-type' id='courseprojects'>
+      <!--Current projects -->
+      <section class='projectbox'>
+        <h3>Student Cluster Competition 2017</h3>
+        <p>
+          I am part of a team of students who will be competing in the Student
+          Cluster Competition this November. We are profiling and optimizing
+          scientific applications so that they will run efficiently and with
+          maximum performance on our custom-built cluster during the contest.
+        </p>
+      </section>
+      <!--Past projects-->
+      <section class='projectbox'>
+        <h3>GUI design for AIGDock</h3>
+        <p>
+          In Summer 2016, I took part in a web development team project. We designed a graphical user
+          interface for AIGDock, a protein-ligand docking software developed by Dr. David Minh's lab.
+          Our aim was to increase the accessibility of this software for researchers without
+          computational backgrounds.
+        </p>
+      </section>
+      <section class='projectbox'>
+        <h3>Classification of Horizontal Gene Transfer</h3>
+        <p>
+          For a Machine Learning course in Fall 2016, I developed classification
+          models to predict instances of horizontal gene transfer in bacterial
+          genomes.
+        </p>
+      </section>
+      <section class='projectbox'>
+        <h3>Automated Essay Grading</h3>
+        <p>
+          For a Data Mining course in Spring 2017, my team explored feature
+          engineering for accurate score classification of essays and short answer
+          responses, which could be used by primary school teachers to provide faster
+          feedback to their students.
+        </p>
+      </section>
+    </article>
 
-  <!-- sidebar with links to jump to content -->
-  <nav id='navigation'>
-    <ul>
-      <li><a href='#about'>About</a></li>
-      <li><a href='#research'>Research</a></li>
-      <li><a href='#teaching'>Teaching</a></li>
-      <li><a href='#courseprojects'>Projects</a></li>
-    </ul>
-  </nav>
+    <!-- sidebar with links to jump to content -->
+    <nav id='navigation'>
+      <ul>
+        <li><a href='#about'>About</a></li>
+        <li><a href='#research'>Research</a></li>
+        <li><a href='#teaching'>Teaching</a></li>
+        <li><a href='#courseprojects'>Projects</a></li>
+      </ul>
+    </nav>
 
-  <!-- sidebar with links to relevant communication platforms-->
-  <nav id='contact'>
-    <ul>
-      <li> <a href='mailto:iva.veseli@gmail.com'>Email</a></li>
-      <li> <a href='https://www.linkedin.com/in/iva-veseli/'>LinkedIn</a></li>
-      <li> <a href='http://orcid.org/0000-0003-2390-5286'>ORCID</a></li>
-      <li> <a href='https://github.com/ivagljiva'>Github</a></li>
-    </ul>
-  </nav>
-</main>
+    <!-- sidebar with links to relevant communication platforms-->
+    <nav id='contact'>
+      <ul>
+        <li> <a href='mailto:iva.veseli@gmail.com'>Email</a></li>
+        <li> <a href='https://www.linkedin.com/in/iva-veseli/'>LinkedIn</a></li>
+        <li> <a href='http://orcid.org/0000-0003-2390-5286'>ORCID</a></li>
+        <li> <a href='https://github.com/ivagljiva'>Github</a></li>
+      </ul>
+    </nav>
+  </main>
 
-<footer>
+  <footer>
     <p>Page code and design by Iva Veseli. Source code on <a href='https://github.com/ivagljiva/webpage'>Github</a>.</p>
-</footer>
-
+  </footer>
+  </div>
 </body>
-</div>
 </html>
