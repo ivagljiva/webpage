@@ -220,15 +220,6 @@ nav a {
   }
 }
 
-/* Freeze the 2-column design on larger screens, since 3-column is having float issues */
-/*@media screen and (min-width: 1280px) {
-  #page {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}*/
 /* 3-column grid for viewports larger than 1280px */
 
 /* Font size: 22 px
