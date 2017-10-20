@@ -187,7 +187,7 @@ nav a {
     float: left;
   }
   /*Flexbox styles for capable browsers */
-  .flexbox .project-type {
+  .flexbox .projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -197,7 +197,7 @@ nav a {
     margin: 0;
   }
   /*CSS grid styles for capable browsers */
-  .cssgrid .project-type {
+  .cssgrid .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 4.447%; /*33px / 742px = 0.04447*/
@@ -264,7 +264,6 @@ nav a {
     margin-left: 34.4852%; /*404.166667 px / 1172 px = 0.344852 */
   }
   /*Create the third column of projectbox elements */
-  /*TODO: fix floatdown of this column */
   .projectbox:nth-of-type(3n){ /*3,6,9,...*/
     float: none;
     margin-left: 68.9704%; /*808.333333 px / 1172 px = 0.689704 */
@@ -281,7 +280,7 @@ nav a {
       margin-left: 3.5%; /*to make it align with 2nd column above/below*/
   }
   /*CSS grid styles for capable browsers */
-  .cssgrid .project-type {
+  .cssgrid .projects {
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 3.4556%; /*40.5px / 1172px = 0.034556 */
   }
