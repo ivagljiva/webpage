@@ -92,6 +92,10 @@ article{
   /* Add a little extra padding for nicer spatial relationships */
   padding-bottom: 0.611em /* 11 px / 18 px = 0.611 (.5 line height) */
 }
+a {
+    color: #298479; /*dark green-grey*/
+    text-decoration: none;
+}
 i, em, cite{
   font-style: italic;
 }
