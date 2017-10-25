@@ -15,7 +15,12 @@
       <figure id="header-photo"
       aria-labelledby="caption-header"
       aria-describedby="about">
-      <img src="img/webpage-header_400x250.png" alt="Venn diagram of biology and computer science" />
+      <img
+        srcset="img/webpage-header_600x300.png 600w,
+          webpage-header_400x250.png 400w"
+        sizes="(min-width: 830px) 50vw, (min-width: 320px) 100 vw, 100vw"
+        src="img/webpage-header_400x250.png"
+        alt="Venn diagram of biology and computer science" />
       <figcaption id='caption-header'>At the intersection of biology and computer science</figcaption>
     </figure>
   </header>
